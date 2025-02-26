@@ -127,12 +127,7 @@ const VehicleList = ({ vehicles }) => {
                             <td className="py-2 px-4 border-b text-black text-center">
                                 {vehicle.vehicle_id || "N/A"}
                             </td>
-                            <td className="py-2 px-4 border-b text-black text-center">
-                                {vehicle.color || "N/A"}
-                            </td>
-                            <td className="py-2 px-4 border-b text-black text-center">
-                                {vehicle.location?.name || "N/A"}
-                            </td>
+
                             <td className="py-2 px-4 border-b text-black text-center">
                                 {vehicle.military_personnel
                                     ? `${vehicle.military_personnel.first_name} ${vehicle.military_personnel.last_name}`
@@ -140,6 +135,13 @@ const VehicleList = ({ vehicles }) => {
                                         ? `${vehicle.civil_personnel.first_name} ${vehicle.civil_personnel.last_name}`
                                         : "N/A"}
                             </td>
+                            <td className="py-2 px-4 border-b text-black text-center">
+                                {vehicle.color || "N/A"}
+                            </td>
+                            <td className="py-2 px-4 border-b text-black text-center">
+                                {vehicle.location?.name || "N/A"}
+                            </td>
+
                             <td className="py-2 px-4 border-b text-black text-center">
                                 {vehicle.vehicle_brand?.name || "N/A"}
                             </td>
