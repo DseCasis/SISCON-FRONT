@@ -2,7 +2,7 @@ import { BsTwitter, BsInstagram, BsFacebook } from "react-icons/bs";
 
 export default function Footer() {
     return (
-        <div className="bg-slate-400 py-4">
+        <div className="grey py-4">
             <div className="container mx-auto px-4">
                 <ul className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
                     <li>
